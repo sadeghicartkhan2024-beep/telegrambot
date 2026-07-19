@@ -1,6 +1,8 @@
 from telegram.ext import Updater, CommandHandler
 
-TOKEN = "8616468391:AAESytyDpnLW9BdKY1up9qc71X8tdbWyeg"
+import os
+
+TOKEN = os.environ["TOKEN"]
 
 def start(update, context):
     update.message.reply_text(
